@@ -16,7 +16,7 @@
 		<link rel="stylesheet" type="text/css" href="//rawgithub.com/fffilo/jqui-interactions/master/jquery-ui.rotatable.css" />
 		<style>
 			body { margin: 0; padding: 32px; }
-			.wrapper { width: 640px; height: 1920px; overflow: hidden; }
+			.wrapper { position: relative; width: 640px; height: 1920px; margin: 0 auto; overflow: hidden; }
 			.box { position: absolute; left: 220px; top: 100px; width: 200px; height: 100px; background: red; background: rgba(255, 0, 0, 0.2); }
 		</style>
 		<script>
@@ -28,6 +28,7 @@
 					})
 					.rotatable({
 						stop: function (event, ui) {
+							// this method fixes handle cursors
 							$(this).resizable('fixHandles');
 						}
 					});
