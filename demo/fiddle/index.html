@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="robots" content="noindex, nofollow" />
+		<title>Fiddle</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="//rawgithub.com/codemirror/CodeMirror/master/lib/codemirror.js"></script>
+		<script src="//rawgithub.com/codemirror/CodeMirror/master/mode/xml/xml.js"></script>
+		<script src="//rawgithub.com/codemirror/CodeMirror/master/mode/javascript/javascript.js"></script>
+		<script src="//rawgithub.com/codemirror/CodeMirror/master/mode/css/css.js"></script>
+		<script src="//rawgithub.com/fffilo/fiddle/master/js/config.js"></script>
+		<script src="//rawgithub.com/fffilo/fiddle/master/js/ui.js"></script>
+		<script src="//rawgithub.com/fffilo/fiddle/master/js/codearea.js"></script>
+		<script src="//rawgithub.com/fffilo/fiddle/master/js/init.js"></script>
+		<script src="//rawgithub.com/fffilo/fiddle/master/js/resize.js"></script>
+		<script src="//rawgithub.com/fffilo/fiddle/master/js/run.js"></script>
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+		<link rel="stylesheet" type="text/css" href="//rawgithub.com/codemirror/CodeMirror/master/lib/codemirror.css" />
+		<link rel="stylesheet" type="text/css" href="//rawgithub.com/fffilo/fiddle/master/css/style.css" />
+	</head>
+	<body>
+		<div class="ajax">
+			<div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="column left">
+				<div class="container codearea html">
+					<label>HTML</label>
+				</div>
+				<div class="handler horizontal"></div>
+				<div class="container codearea js">
+					<label>JS</label>
+				</div>
+			</div>
+			<div class="handler vertical"></div>
+			<div class="column right">
+				<div class="container codearea css">
+					<label>CSS</label>
+				</div>
+				<div class="handler horizontal"></div>
+				<div class="container result">
+					<label>Run</label>
+					<iframe></iframe>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
