@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="robots" content="noindex, nofollow" />
+		<title>jQuery UI interactions</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+		<script src="//rawgithub.com/fffilo/jqui-interactions/master/jquery-ui.draggable.patch.js"></script>
+		<script src="//rawgithub.com/fffilo/jqui-interactions/master/jquery-ui.resizable.patch.js"></script>
+		<script src="//rawgithub.com/fffilo/jqui-interactions/master/jquery-ui.rotatable.js"></script>
+		<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="//rawgithub.com/fffilo/jqui-interactions/master/jquery-ui.draggable.css" />
+		<link rel="stylesheet" type="text/css" href="//rawgithub.com/fffilo/jqui-interactions/master/jquery-ui.resizable.css" />
+		<link rel="stylesheet" type="text/css" href="//rawgithub.com/fffilo/jqui-interactions/master/jquery-ui.rotatable.css" />
+		<style>
+			body { margin: 0; padding: 32px; }
+			.wrapper { width: 640px; height: 1920px; overflow: hidden; }
+			.box { position: absolute; left: 220px; top: 100px; width: 200px; height: 100px; background: red; background: rgba(255, 0, 0, 0.2); }
+		</style>
+		<script>
+			$(window).load(function(event) {
+				$('.box')
+					.draggable()
+					.resizable({
+						handles: 'all'
+					})
+					.rotatable({
+						stop: function (event, ui) {
+							$(this).resizable('fixHandles');
+						}
+					});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="box"></div>
+		</div>
+	</body>
+</html>
