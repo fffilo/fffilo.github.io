@@ -1,0 +1,17 @@
+body { max-width: 480px; min-width: 260px; margin: 12px auto; }
+body > div.navbar { margin: 0 !important; }
+a,button { outline: 0 !important; }
+a.disabled,a.disabled:hover { pointer-events: none; opacity: 0.5; }
+p { margin: 0; font-size: 11px; text-align: center; color: #aaa; }
+input { display: block !important; width: 100%; height: 34px !important; line-height: 1.4 !important; padding: 6px 12px; box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing: border-box; }
+table { margin: 12px 0 !important; font-size: 13px; }
+table thead {  background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2)); background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2); background-image: -o-linear-gradient(top, #ffffff, #f2f2f2); background-image: linear-gradient(to bottom, #ffffff, #f2f2f2); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0); }
+table th { text-align: center !important; }
+table td { text-align: right !important; }
+table td.grade { width: 15%; }
+table td.percent_from { width: 20%; }
+table td.percent_to { width: 20%; }
+table td.score_from { width: 15%; }
+table td.score_num { width: 15%; font-size: 9px; }
+table td.score_to { width: 15%; }
+table tr.separator { display: none; }
