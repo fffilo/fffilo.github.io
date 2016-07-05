@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Summernote Plugins - Bootstrap Alerts</title>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="//summernote.org/bower_components/summernote/dist/summernote.js"></script>
+		<script type="text/javascript" src="//rawgit.com/fffilo/summernote.alerts/master/src/summernote.alerts.js"></script>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="//summernote.org/bower_components/summernote/dist/summernote.css" />
+	</head>
+	<body style="width: 80%; margin: auto; margin-top: 20px;">
+		<h2 style="text-align: center;">Summernote Plugins - Bootstrap Alerts</h2>
+		<br />
+		<textarea class="summernote">(Try inserting a new template)</textarea>
+		<script>
+			$(function() {
+				$(".summernote").summernote({
+					height: 280,
+					minHeight: null,
+					maxHeight: null,
+					//focus: true,
+					tabsize: 4,
+					toolbar: [
+						[ "style",     [ "style" ] ],
+						[ "fontstyle", [ "bold", "italic", "underline"/*, "superscript", "subscript"*/, "strikethrough"/*, "clear"*/ ] ],
+						[ "fontname",  [ "fontname" ] ],
+						//[ "fontsize",  [ "fontsize" ]],
+						[ "color",     [ "color" ] ],
+						//[ "para",      [ "ul", "ol", "paragraph" ] ],
+						//[ "height",    [ "height" ] ],
+						//[ "table",     [ "table" ] ],
+						[ "insert",    [ "link", "picture", "video"/*, "hr"*/ ] ],
+						[ "alerts",    [ "success", "info", "warning", "danger" ] ],
+						//[ "view",      [ "fullscreen", "codeview" ] ],
+						[ "help",      [ "help" ] ]
+					]
+				});
+			});
+		</script>
+	</body>
+</html>
